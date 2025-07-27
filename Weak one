@@ -1,0 +1,99 @@
+
+✅ الأسبوع الأول: الأساسيات في PyTorch
+
+🎯 الأهداف | Goals:
+
+تعرف ما هي PyTorch.
+
+تفهم مفهوم Tensors.
+
+تتعلم عن autograd (التفاضل التلقائي).
+
+
+
+---
+
+🔹 الخطوة 1: ما هي PyTorch؟
+
+بالعربية:
+PyTorch مكتبة مفتوحة المصدر من Facebook تُستخدم لبناء نماذج التعلم العميق. أهم ما يميزها:
+✅ سهلة للبحث والتجربة (debugging).
+✅ مرنة جدًا وتسمح لك بتخصيص كل شيء.
+✅ تستخدم حساب تلقائي للمشتقات (autograd).
+
+In English:
+PyTorch is an open-source library from Facebook for building deep learning models.
+✅ Easy to debug.
+✅ Very flexible and customizable.
+✅ Uses automatic differentiation (autograd).
+
+
+---
+
+🔹 الخطوة 2: تثبيت PyTorch
+
+بالعربية:
+
+إذا عندك Python مثبت:
+
+
+pip install torch torchvision
+
+In English:
+Install using pip:
+
+pip install torch torchvision
+
+> إذا تريد، قل لي نظامك (Windows/Linux/Android عبر Pydroid) وأجهز لك الأمر المناسب.
+
+
+
+
+---
+
+🔹 الخطوة 3: تعلم الـ Tensors
+
+بالعربية:
+التينسور (Tensor) يشبه المصفوفة لكنه أكثر مرونة ويستخدم في التعلم العميق.
+
+In English:
+A tensor is like a multi-dimensional array, used heavily in deep learning.
+
+
+---
+
+🛠 أمثلة عملية (Examples):
+
+✅ إنشاء Tensor:
+
+import torch
+
+# إنشاء Tensor من مصفوفة
+x = torch.tensor([[1, 2], [3, 4]])
+print(x)
+
+✅ Tensor عشوائي:
+
+y = torch.rand(2, 3)   # مصفوفة 2×3 عشوائية
+print(y)
+
+✅ عمليات رياضية:
+
+a = torch.tensor([2.0, 3.0])
+b = torch.tensor([4.0, 5.0])
+
+print(a + b)        # جمع
+print(a * b)        # ضرب
+print(a ** 2)       # تربيع
+
+
+---
+
+🔹 الخطوة 4: التفاضل التلقائي (Autograd)
+
+بالعربية:
+Autograd يحسب تلقائيًا المشتقات؛ مفيد جدًا لتحديث الأوزان في التعلم العميق.
+
+In English:
+Autograd automatically computes derivatives (gradients); very useful for training.
+
